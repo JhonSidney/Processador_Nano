@@ -1,0 +1,36 @@
+/*module AOI (input A, B, C, D, output F);
+	assign F = ~((A & B) | (C & D));
+endmodule */
+
+module AOI(input A, B, C, D, output F);
+	wire AB, CD, O;
+	assign AB = A & B;
+	assign CD = C & D;
+	assign O = AB | CD;
+	assign F = ~O;
+	
+endmodule 
+
+module AOI (input A, B, C, D, output F);
+	assign F = ~((A & B) | (C & D));
+endmodule 
+
+module INV(input A, output F);
+	assign F = ~A;
+endmodule 
+
+module MUX2 (input SEL, A, B, output F);
+	//multiplexer 
+	INV G1(SEL, SELB);
+	AOI G2 (SELB, A, SEL, B, FB);
+	INV G3 (.A(FB), .F(F));
+endmodule 
+
+
+Em assign -> Settings escolher o Top-lvl entity nos ...
+
+
+para gerar a waveform
+novo arquivo -> University program VWF
+em Simulation da VWF 
+Escolher Quartus II

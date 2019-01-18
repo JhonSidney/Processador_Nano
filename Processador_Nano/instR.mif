@@ -1,0 +1,50 @@
+-- Copyright (C) 1991-2013 Altera Corporation
+-- Your use of Altera Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Altera Program License 
+-- Subscription Agreement, Altera MegaCore Function License 
+-- Agreement, or other applicable license agreement, including, 
+-- without limitation, that your use is for the sole purpose of 
+-- programming logic devices manufactured by Altera and sold by 
+-- Altera or its authorized distributors.  Please refer to the 
+-- applicable agreement for further details.
+
+-- Quartus II generated Memory Initialization File (.mif)
+
+WIDTH=16;
+DEPTH=256;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	000  :   F000; -- output R0
+	001  :   F200; -- output R1
+	002  :   F400; -- output R0
+	003  :   F600; -- output R0
+	004  :   F800; -- output R0
+	005  :   FA00; -- output R0
+	006  :   FC00; -- output R0
+	007  :   FE00; -- output R0
+	008  :   1040; -- Add R0, R1, R0
+	009  :   F000; -- output R0
+	00A  :   2288; -- And R1, R2, R1
+	00B  :   F200; -- output R1
+	00C  :   34D0; -- Or R2, R3, R2
+	00D  :   F400; -- output R2
+	00E  :   4718; -- Sub R3, R2, R3
+	00F  :   F600; -- output R3
+	010  :   5820; -- Neg R4, R4
+	011  :   F800; -- output R4
+	012  :   6A28; -- Not R5, R5
+	013  :   FA00; -- output R5
+	014  :   7E30; -- CPY R6, R7
+	015  :   FC00; -- output R6
+	016  :   0000; -- NOP
+	017  :   0000; -- NOP
+	018  :   D018; -- J 0x18
+	[019..0FF]  :   0000;
+END;

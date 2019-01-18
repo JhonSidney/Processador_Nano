@@ -1,0 +1,3 @@
+module testeProvaMonitoria(clk, rst, dado, FA, FB, A, B, NA, NB);
+
+endmodule 
